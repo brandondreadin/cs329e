@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JigSaw Puzzle </title>
+	<link rel="stylesheet" href="./jigsaw.css">
+</head>
+<body>
+	<h2> JigSaw Puzzle </h2>
+	<table align="center">
+	<tr>
+		<td>Time Taken <br>
+		<input type="text" id="time" readonly="readonly" value="00:00:00" style="text-align: center;"></td>
+		<td><img src="./puzzleback.gif" alt="grid" class="grid"></td>
+	</tr>
+	<tr>
+		<td></td><td><input type="button" id="done" value="Done" onclick="stopTime();"></td>
+	</tr>
+	</table><br>
+	<img style = "position: absolute; top: 500px; left: 100px;" src = "" onmousedown = "grabber(event);" id="00" alt="pt1">
+	<img style = "position: absolute; top: 500px; left: 200px;" src = "" onmousedown = "grabber(event);" id="01" alt="pt2">
+	<img style = "position: absolute; top: 500px; left: 300px;" src = "" onmousedown = "grabber(event);" id="02" alt="pt3">
+	<img style = "position: absolute; top: 500px; left: 400px;" src = "" onmousedown = "grabber(event);" id="03" alt="pt4">
+	<img style = "position: absolute; top: 500px; left: 500px;" src = "" onmousedown = "grabber(event);" id="10" alt="pt5">
+	<img style = "position: absolute; top: 500px; left: 600px;" src = "" onmousedown = "grabber(event);" id="11" alt="pt6">
+	<img style = "position: absolute; top: 500px; left: 700px;" src = "" onmousedown = "grabber(event);" id="12" alt="pt7">
+	<img style = "position: absolute; top: 500px; left: 800px;" src = "" onmousedown = "grabber(event);" id="13" alt="pt8">
+	<img style = "position: absolute; top: 500px; left: 900px;" src = "" onmousedown = "grabber(event);" id="20" alt="pt9">
+	<img style = "position: absolute; top: 500px; left: 1000px;" src = "" onmousedown = "grabber(event);" id="21" alt="pt10">
+	<img style = "position: absolute; top: 500px; left: 1100px;" src = "" onmousedown = "grabber(event);" id="22" alt="pt11">
+	<img style = "position: absolute; top: 500px; left: 1200px;" src = "" onmousedown = "grabber(event);" id="23" alt="pt12">
+	<script src="./jigsaw.js"></script>
+</body>
+</html>

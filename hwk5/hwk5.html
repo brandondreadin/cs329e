@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Galaxies</title>
+	<link rel="stylesheet" href="./hwk5.css">
+</head>
+<body>
+	<h1>Galaxies</h1>
+	<figure>
+	<script type="text/javascript">
+		var galaxies = new Array("GalaxyCluster.jpg", "InteractingGalaxies.jpg", "M104.jpg", "M51.jpg", "NGC1300.jpg", "NGC6217.jpg");
+
+		var captions = new Array("Galaxy Cluster", "Interacting Galaxies", "M 104", "M 51", "NGC 1300", "NGC 6217");
+
+		var index = Math.floor(Math.random()*galaxies.length);
+
+		document.writeln("<img src=\"" + galaxies[index] + "\" alt=\"" + captions[index] + "\" width=\"640px\" height=\"480px\">");
+
+		document.writeln("<figcaption>" + captions[index] + "</figcaption>");
+	</script>
+	</figure>
+</body>
+</html>

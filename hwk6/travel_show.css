@@ -1,0 +1,26 @@
+body {
+	background-color: #eee;
+	color: black;
+	font-family: Verdana, Georgia, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	border: 1px black solid;
+	display: block;
+	margin: 2px auto;
+	padding: 2px;
+	width: 640px;
+	height: auto;
+	min-height: 480px;
+	max-height: 700px;
+}
+
+figcaption {
+	margin: 2px auto;
+	width: 640px;
+	text-align: center;
+}

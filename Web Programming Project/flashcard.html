@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trig Identities</title>
+	<link rel="stylesheet" href="./flashcard.css">
+</head>
+<body>
+	<div class="bigwrapper">
+		<div class="flashcard">
+			<p id="1">cos(2x)</p>
+			<div class="wrapper">
+				<button id="1a" onclick="change(1)">Reveal</button>
+				<button id="1b" class="hidden" onclick="reset(1)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="2">sin(2x)</p>
+			<div class="wrapper">
+				<button id="2a" onclick="change(2)">Reveal</button>
+				<button id="2b" class="hidden" onclick="reset(2)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="3">tan(2x)</p>
+			<div class="wrapper">
+				<button id="3a" onclick="change(3)">Reveal</button>
+				<button id="3b" class="hidden" onclick="reset(3)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="4">sin<sup>2</sup>(x) + cos<sup>2</sup>(2x)</p>
+			<div class="wrapper">
+				<button id="4a" onclick="change(4)">Reveal</button>
+				<button id="4b" class="hidden" onclick="reset(4)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="5">1 + tan<sup>2</sup>(x)</p>
+			<div class="wrapper">
+				<button id="5a" onclick="change(5)">Reveal</button>
+				<button id="5b" class="hidden" onclick="reset(5)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="6">1+ cot<sup>2</sup>(x)</p>
+			<div class="wrapper">
+				<button id="6a" onclick="change(6)">Reveal</button>
+				<button id="6b" class="hidden" onclick="reset(6)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="7">sin(&pi; / 2 - x)</p>
+			<div class="wrapper">
+				<button id="7a" onclick="change(7)">Reveal</button>
+				<button id="7b" class="hidden" onclick="reset(7)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="8">cos(&pi; / 2 - x)</p>
+			<div class="wrapper">
+				<button id="8a" onclick="change(8)">Reveal</button>
+				<button id="8b" class="hidden" onclick="reset(8)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="9">tan(&pi; / 2 - x)</p>
+			<div class="wrapper">
+				<button id="9a" onclick="change(9)">Reveal</button>
+				<button id="9b" class="hidden" onclick="reset(9)">Reset</button>
+			</div>
+		</div>
+		<div class="flashcard">
+			<p id="10">sin(x + y)</p>
+			<div class="wrapper">
+				<button id="10a" onclick="change(10)">Reveal</button>
+				<button id="10b" class="hidden" onclick="reset(10)">Reset</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	function change(id){
+		var p = document.getElementById(id);
+		if (id == 1){
+			p.innerHTML = "cos<sup>2</sup>(x) - sin<sup>2</sup>(x)";
+			document.getElementById("1a").className = "hidden";
+			document.getElementById("1b").className = "";
+		}
+		else if (id == 2){
+			p.innerHTML = "2sin(x)cos(x)";
+			document.getElementById("2a").className = "hidden";
+			document.getElementById("2b").className = "";
+		}
+		else if (id == 3){
+			p.innerHTML = "2tan(x)/(1-tan<sup>2</sup>(x))";
+			document.getElementById("3a").className = "hidden";
+			document.getElementById("3b").className = "";
+		}
+		else if (id == 4){
+			p.innerHTML = "1";
+			document.getElementById("4a").className = "hidden";
+			document.getElementById("4b").className = "";
+		}
+		else if (id == 5){
+			p.innerHTML = "sec<sup>2</sup>(x)";
+			document.getElementById("5a").className = "hidden";
+			document.getElementById("5b").className = "";
+		}
+		else if (id == 6){
+			p.innerHTML = "csc<sup>2</sup>(x)";
+			document.getElementById("6a").className = "hidden";
+			document.getElementById("6b").className = "";
+		}
+		else if (id == 7){
+			p.innerHTML = "cos(x)";
+			document.getElementById("7a").className = "hidden";
+			document.getElementById("7b").className = "";
+		}
+		else if (id == 8){
+			p.innerHTML = "sin(x)";
+			document.getElementById("8a").className = "hidden";
+			document.getElementById("8b").className = "";
+		}
+		else if (id == 9){
+			p.innerHTML = "cot(x)";
+			document.getElementById("9a").className = "hidden";
+			document.getElementById("9b").className = "";
+		}
+		else if (id == 10){
+			p.innerHTML = "sin(x)cos(y)+cos(x)sin(y)";
+			document.getElementById("10a").className = "hidden";
+			document.getElementById("10b").className = "";
+		}
+	}
+
+	function reset(id){
+		var p = document.getElementById(id);
+		if (id == 1){
+			p.innerHTML = "cos(2x)";
+			document.getElementById('1a').className = "";
+			document.getElementById('1b').className = "hidden";
+		}
+		else if (id == 2){
+			p.innerHTML = "sin(2x)";
+			document.getElementById('2a').className = "";
+			document.getElementById('2b').className = "hidden";
+		}
+		else if (id == 3){
+			p.innerHTML = "tan(2x)";
+			document.getElementById('3a').className = "";
+			document.getElementById('3b').className = "hidden";
+		}
+		else if (id == 4){
+			p.innerHTML = "sin<sup>2</sup>(x) + cos<sup>2</sup>(2x)";
+			document.getElementById('4a').className = "";
+			document.getElementById('4b').className = "hidden";
+		}
+		else if (id == 5){
+			p.innerHTML = "1 + tan<sup>2</sup>(x)";
+			document.getElementById('5a').className = "";
+			document.getElementById('5b').className = "hidden";
+		}
+		else if (id == 6){
+			p.innerHTML = "1+ cot<sup>2</sup>(x)";
+			document.getElementById('6a').className = "";
+			document.getElementById('6b').className = "hidden";
+		}
+		else if (id == 7){
+			p.innerHTML = "sin(&pi; / 2 - x)";
+			document.getElementById('7a').className = "";
+			document.getElementById('7b').className = "hidden";
+		}
+		else if (id == 8){
+			p.innerHTML = "cos(&pi; / 2 - x)";
+			document.getElementById('8a').className = "";
+			document.getElementById('8b').className = "hidden";
+		}
+		else if (id == 9){
+			p.innerHTML = "tan(&pi; / 2 - x)";
+			document.getElementById('9a').className = "";
+			document.getElementById('9b').className = "hidden";
+		}
+		else if (id == 10){
+			p.innerHTML = "sin(x + y)";
+			document.getElementById('10a').className = "";
+			document.getElementById('10b').className = "hidden";
+		}
+	}
+</script>
+</html>

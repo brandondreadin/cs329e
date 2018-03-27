@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel Show</title>
+	<link rel="stylesheet" href="./travel_show.css">
+</head>
+<body>
+	<h1>Travel Show</h1>
+	
+	<figure>
+		<img id="slideShowImg" src="agra_fort.jpg" alt="Agra Fort">
+		<figcaption id="slideShowCap">Agra Fort</figcaption>
+	</figure>
+
+	<script type="text/javascript">
+	<!--
+		var index = 1;
+		function changeImage(){
+			var photos = ["agra_fort.jpg", "ajanta_ellora.jpeg", "akshardham_temple.jpg", "char_minar.jpg", "hawa_mahal.jpeg", "mysore_palace.jpeg", "sun_temple.jpg", "taj_mahal.jpeg", "victoria_memorial.jpg", "mumbai.jpeg"];
+
+			var captions = ["Agra Fort", "Ajanta Ellora", "Akshardham Temple", "Char Minar", "Hawa Mahal", "Mysore Palace", "Sun Temple", "Taj Mahal", "Victoria Memorial Hall", "Gateway of India"];
+
+			document.getElementById("slideShowImg").src=photos[index];
+			document.getElementById("slideShowImg").alt=captions[index];
+			document.getElementById("slideShowCap").innerHTML = captions[index];
+
+			if (index == photos.length - 1){
+				index = 0;
+			} else {index++;}
+		}
+
+		setInterval(changeImage, 3000);
+	//-->
+	</script>
+	
+</body>
+</html>

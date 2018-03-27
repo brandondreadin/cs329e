@@ -1,0 +1,14 @@
+td, button {
+	width: 100px;
+	height: 100px;
+}
+
+table {
+	margin: 100px auto;
+}
+
+img{
+	display: none;
+	width: 100%;
+	height: 100%;
+}

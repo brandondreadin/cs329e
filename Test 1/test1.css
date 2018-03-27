@@ -1,0 +1,101 @@
+body {
+	background-color: #6b6b6b;
+	font-family: verdana, georgia, sans-serif;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+}
+
+h1 a {
+	text-decoration: none;
+	color: black;
+}
+header li {
+	display: inline;
+	margin-left: 20px;
+	margin-right: 40px;
+	padding: 0;
+}
+
+header li a{
+	color: black;
+	text-decoration: none;
+}
+
+header li a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+nav {
+	border-top: 2px red solid;
+	border-bottom: 2px red solid;
+	margin-bottom: 30px;
+}
+
+.images{
+	width: 90%;
+	margin: 0 auto;
+
+}
+img {
+	width: 400px;
+	height: 300px;
+	border: 2px black solid;
+	margin: 5px;
+}
+
+section {
+	background-color: #e3e3e3;
+	padding-top: 20px;
+	margin: 30px 0 0 0;
+	border-top: 3px red solid;
+	border-bottom: 3px red solid;
+	min-height: 350px
+}
+
+.text {
+	width: 90%;
+	margin: 0 auto;
+	font-family: "Open Sans", georgia;
+}
+
+.first, .second, .third, .fourth {
+	float: left;
+	width: 22.5%;
+	height: 200px;
+	margin: 0 5px;
+	display: inline-block;
+	padding: 0;
+}
+
+footer{
+	margin: 10px;
+	clear: both;
+}
+
+.resImg {
+	width: 800px;
+	height: 615px;
+	display: block;
+	margin: 0 auto;
+}
+
+form {
+	width: 800px;
+	margin: 20px auto;
+}
+
+.resFoot{
+	border-top: 2px red solid;
+	padding: 10px;
+	margin: 0;
+}
+
+div a {
+	color: red;
+	text-decoration: none;
+	text-align: right;
+	font-size: small;
+}

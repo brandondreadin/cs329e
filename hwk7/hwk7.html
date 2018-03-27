@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mortgage Calculator</title>
+</head>
+<body>
+	<form action="" method="post" id="calcForm">
+		<table>
+			<tr>
+				<td>Principal Amount:</td>
+				<td><input name="principal" type="text"></td>
+			</tr>
+			<tr>
+				<td>Yearly percentage interest rate:</td>
+				<td><input name="interest" type="text"></td>
+			</tr>
+			<tr>
+				<td>Loan term in months:</td>
+				<td><input name="months" type="text"></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="calc" value="Calculate"></td>
+				<td><input type="reset" value="Clear"></td>
+			</tr>
+			<tr>
+				<td>Monthly Payments:</td>
+				<td><input name="monthlyPay" type="text" value=""></td>
+			</tr>
+			<tr>
+				<td>Sum of all payments:</td>
+				<td><input name ="sum" type="text" value=""></td>
+			</tr>
+			<tr>
+				<td>Total interest paid:</td>
+				<td><input name ="interestPaid" type="text" value=""></td>
+			</tr>
+		</table>
+	</form>
+
+	<script type="text/javascript" src="./calculate.js"></script>
+</body>
+</html>
