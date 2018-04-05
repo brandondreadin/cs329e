@@ -3,6 +3,7 @@ var secondClicked = false;
 var matching = false;
 var val1 = undefined;
 var tries = 0;
+var timeOut;
 
 function match(btn){
 	if ($(btn.firstElementChild).css('display') == 'block'){
@@ -13,13 +14,20 @@ function match(btn){
 		firstClicked = btn;
 		$(firstClicked.firstElementChild).show();
 		val1 = btn.value;
-		setTimeout(reset, 3000);
+		timeOut = setTimeout(reset, 3000);
 	}
 
 	else if (secondClicked == false){
 		secondClicked = btn;
 		$(secondClicked.firstElementChild).show();
 		matching = check(btn.value);
+		clearTimeout(timeOut);
+		if (matching){
+			reset();
+		}
+		else{
+			timeOut = setTimeout(reset, 1000);
+		}
 	}
 
 	else {
